@@ -1,4 +1,5 @@
-function scrollar(sectionNumber) {
+    
+    function scrollar(sectionNumber) {
     // Gera o ID da seção com base no número passado
     const sectionId = `section${sectionNumber}`;
     
@@ -14,4 +15,10 @@ function scrollar(sectionNumber) {
     } else {
       console.error(`Seção com ID '${sectionId}' não encontrada.`);
     }
+  }
+function email() {
+    window.location.href = "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=eventos@darkwave.com.br";
+  }
+  function whatsapp() {
+    window.location.href = "https://wa.me/+5519996216366";
   }

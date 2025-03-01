@@ -1,87 +1,302 @@
-.titillium-web-extralight {
-    font-family: "Titillium Web", serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .titillium-web-light {
-    font-family: "Titillium Web", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .titillium-web-regular {
-    font-family: "Titillium Web", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .titillium-web-semibold {
-    font-family: "Titillium Web", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .titillium-web-bold {
-    font-family: "Titillium Web", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .titillium-web-black {
-    font-family: "Titillium Web", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .titillium-web-extralight-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .titillium-web-light-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .titillium-web-regular-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .titillium-web-semibold-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .titillium-web-bold-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
+@font-face {
+  font-family: "Versus Ultra";
+  src: url(Versus\ Ultra.otf);
+}
+
+@font-face {
+  font-family: "Paralucent-ExtraLight";
+  src: url(Paralucent-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Paralucent-Light";
+  src: url(Paralucent-Light.ttf);
+}
+
+@font-face {
+  font-family: "Paralucent-Bold";
+  src: url(Paralucent-Bold.ttf);
+}
+
+.showcase {
+  background: url("imagens/showcase.png") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 5;
+}
+
+.ultratext {
+  font-size: 600%;
+  font-family: "Versus Ultra";
+}
+
+li {
+  list-style-type: decimal-leading-zero;
+  color: #ffffff;
+  width: space-between;
+  font-size: 300%;
+  display: flex;
+  text-justify:distribute;
+  justify-content: space-between;
+}
+
+.about {
+  font-size: 40px;
+  margin: 5%;
+  text-align: center;
+  justify-items: center;
+}
+
+a {
+  width: 28vw;
+  align-content: center;
+  text-align: left;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+  cursor: pointer;
+}
+.nav-break1 {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.nav-break{
+  justify-content:space-evenly;
+  display: flex;
+  width: 100%;
+}
+.number {
+  width: auto;
+  font-size: 200px;
+  font-weight: 900;
+  height: auto;
+  font-family: "Paralucent-Bold";
+}
+
 body {
-    background-image: linear-gradient(to bottom right, #ffaa00, #9428f0);
-    color: #ffffff;
-    font-family: "Titillium Web", serif;
-    max-width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  background-image: linear-gradient(#ffaa00, #9428f0);
+  color: #ffffff;
+  font-family: "Paralucent-Light";
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+img {
+  margin: 2%;
+  justify-items: center;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+p {
+  text-align: left;
+  font-size: 35px;
+  font-family: "Paralucent-Light";
+  margin-left: 4%;
+  margin-right: 4%;
+  font-weight: 400;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 200px;
+  font-family: "Humming";
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 0;
+  width: 80%;
 }
 
 .fade-box {
-    background-color: rgba(0, 0, 0); /* Preto com 70% de opacidade */
+  background-color: rgba(0, 0, 0);
+  color: white;
+  padding: 50px;
+  border-radius: 80px;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 1080px;
+  height: (100% - 1130px);
+}
+
+.double-box {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.boxed-section, .boxed-section2, .boxed-section3 {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.boxed-section2 {
+  height: 50vh;
+  text-align: left;
+}
+
+.boxed-section3 {
+  height: 40vh;
+}
+
+.box1, .box2, .box3 {
+  flex: 1;
+  margin: 0 10px;
+  border: 3px solid white;
+  text-align: left;
+  padding: 20px;
+  font-size: 25px;
+  width: 20%;
+  display: table-column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 {
+  height: 380px;
+}
+
+.box2 {
+  height: 660px;
+}
+
+.box3 {
+  height: 275px;
+}
+
+.box1 h1, .box2 h1, .box3 h1 {
+  margin-bottom: 0;
+  font-size: 130%;
+}
+
+.box1 h5, .box2 h5 {
+  font-weight: 600;
+  font-size: 28px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.box1 p, .box2 p, .box3 p {
+  font-weight: 300;
+  font-size: 26px;
+  text-align: left;
+  margin: 0;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 789px) {
+  .ultratext {
+    font-size: 100%;
+  }
+  .showcase {
+    background: url("imagens/showcase-mobile.png") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 5;
+  }
+
+  .fade-box {
+    background-color: rgba(0, 0, 0);
     color: white;
     padding: 50px;
     border-radius: 80px;
     text-align: center;
     max-width: 100%;
     width: 100%;
+    margin-top: 100vh;
+    height: (100% - 1130px);
+  }
+  
+  .number {
+    width: auto;
+    font-size: 400%;
+    font-weight: 900;
+    height: auto;
+    font-family: "Paralucent-Bold";
+  }
+
+  li {
+    font-size: 40%;
+  }
+
+  .about {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .slogan {
+    font-size: 100px;
+  }
+
+  .fade-box {
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 18px;
+  }
+  .resultados, img {
+    width: 100%;
+  }
+  .double-box {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .boxed-section, .boxed-section2, .boxed-section3 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box1, .box2, .box3 {
+    width: 80%;
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .box1 h1, .box2 h1, .box3 h1 {
+    font-size: 100%;
+  }
+
+  .box1 h5, .box2 h5 {
+    font-size: 20px;
+  }
+
+  .box1 p, .box2 p, .box3 p {
+    font-size: 18px;
+  }
 }
