@@ -54,11 +54,14 @@ li {
 }
 
 a {
-  width: 28vw;
+  width: auto;
   align-content: center;
   text-align: left;
 }
 
+.space {
+  margin-right: 10px;
+}
 nav{
   display: flex;
   flex-direction: column;
@@ -68,21 +71,22 @@ a:hover {
   cursor: pointer;
 }
 .nav-break1 {
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
   width: 100%;
-  justify-content: center;
 }
 .nav-break{
-  justify-content:space-evenly;
+  justify-content:center;
   display: flex;
   width: 100%;
 }
+
 .number {
   width: auto;
   font-size: 200px;
   font-weight: 900;
   height: auto;
+  margin-right: 2%;
   font-family: "Paralucent-Bold";
 }
 
@@ -96,11 +100,16 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 img {
-  margin: 2%;
   justify-items: center;
+}
+
+.contato {
+ margin-right: 40px;
 }
 
 img:hover {
@@ -217,14 +226,11 @@ p {
   }
   .showcase {
     background: url("imagens/showcase-mobile.png") no-repeat center center/cover;
-    position: absolute;
     top: 0;
     margin: 0;
     padding: 0;
+    height: 100%;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
     z-index: 5;
   }
 
@@ -232,24 +238,25 @@ p {
     background-color: rgba(0, 0, 0);
     color: white;
     padding: 50px;
+    margin-bottom: 4%;
     border-radius: 80px;
     text-align: center;
     max-width: 100%;
     width: 100%;
     margin-top: 100vh;
-    height: (100% - 1130px);
+   
   }
-  
+
   .number {
     width: auto;
-    font-size: 400%;
+    font-size: 200%;
     font-weight: 900;
     height: auto;
     font-family: "Paralucent-Bold";
   }
 
   li {
-    font-size: 40%;
+    font-size: 60%;
   }
 
   .about {
@@ -265,7 +272,7 @@ p {
   }
 
   .fade-box {
-    padding: 20px;
+    padding: 10px;
     border-radius: 40px;
     font-size: 18px;
   }
@@ -289,7 +296,7 @@ p {
   }
 
   .box1 h1, .box2 h1, .box3 h1 {
-    font-size: 100%;
+    font-size: 80%;
   }
 
   .box1 h5, .box2 h5 {
