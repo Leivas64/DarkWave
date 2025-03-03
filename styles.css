@@ -19,9 +19,8 @@
 }
 
 .showcase {
-  background: url("imagens/showcase.png");
+  background: url("showcase.png") no-repeat center center/cover;
   position: absolute;
-  background-size: cover;
   top: 0;
   margin: 0;
   padding: 0;
@@ -40,8 +39,11 @@
 li {
   list-style-type: decimal-leading-zero;
   color: #ffffff;
-  font-size: 400%;
+  width: space-between;
+  font-size: 300%;
   display: flex;
+  text-justify:distribute;
+  justify-content: space-between;
 }
 
 .about {
@@ -51,8 +53,41 @@ li {
   justify-items: center;
 }
 
-.nav ul a:hover {
+a {
+  width: auto;
+  align-content: center;
+  text-align: left;
+}
+
+.space {
+  margin-right: 10px;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
   cursor: pointer;
+}
+.nav-break1 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.nav-break{
+  justify-content:center;
+  display: flex;
+  width: 100%;
+}
+
+.number {
+  width: auto;
+  font-size: 200px;
+  font-weight: 900;
+  height: auto;
+  margin-right: 2%;
+  font-family: "Paralucent-Bold";
 }
 
 body {
@@ -65,11 +100,16 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 img {
-  margin: 2%;
   justify-items: center;
+}
+
+.contato {
+ margin-right: 40px;
 }
 
 img:hover {
@@ -107,7 +147,7 @@ p {
   text-align: center;
   max-width: 100%;
   width: 100%;
-  margin-top: 1000px;
+  margin-top: 1080px;
   height: (100% - 1130px);
 }
 
@@ -184,9 +224,39 @@ p {
   .ultratext {
     font-size: 100%;
   }
+  .showcase {
+    background: url("showcase-mobile.png") no-repeat center center/cover;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    left: 0;
+    z-index: 5;
+  }
+
+  .fade-box {
+    background-color: rgba(0, 0, 0);
+    color: white;
+    padding: 50px;
+    margin-bottom: 4%;
+    border-radius: 80px;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 100vh;
+   
+  }
+
+  .number {
+    width: auto;
+    font-size: 200%;
+    font-weight: 900;
+    height: auto;
+    font-family: "Paralucent-Bold";
+  }
 
   li {
-    font-size: 200%;
+    font-size: 60%;
   }
 
   .about {
@@ -202,9 +272,9 @@ p {
   }
 
   .fade-box {
-    padding: 20px;
+    padding: 10px;
     border-radius: 40px;
-  font-size: 18px;
+    font-size: 18px;
   }
   .resultados, img {
     width: 100%;
@@ -226,7 +296,7 @@ p {
   }
 
   .box1 h1, .box2 h1, .box3 h1 {
-    font-size: 100%;
+    font-size: 80%;
   }
 
   .box1 h5, .box2 h5 {
