@@ -17,8 +17,8 @@
     }
   }
 function email() {
-    window.location.href = "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=eventos@darkwave.com.br";
+  window.open('https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=eventos@darkwave.com.br');
   }
   function whatsapp() {
-    window.location.href = "https://wa.me/+5519996216366";
+    window.open('https://wa.me/+5519996216366');
   }
