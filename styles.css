@@ -19,7 +19,7 @@
 }
 
 .showcase {
-  background: url("showcase.png") no-repeat center center/cover;
+  background: url("public/images/showcase.png") no-repeat center center/cover;
   position: absolute;
   top: 0;
   margin: 0;
@@ -251,7 +251,7 @@ p {
     font-size: 100%;
   }
   .showcase {
-    background: url("showcase-mobile.png") no-repeat center center/cover;
+    background: url("public/images/showcase-mobile.png") no-repeat center center/cover;
     top: 0;
     margin: 0;
     padding: 0;
